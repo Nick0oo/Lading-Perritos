@@ -3,12 +3,12 @@ import { motion } from 'framer-motion';
 import { MessageCircle } from 'lucide-react';
 
 const HeroSection: React.FC = () => {
-  const whatsappNumber = '+1234567890'; // Reemplaza esto con el número de WhatsApp real
-  const whatsappMessage = encodeURIComponent('Hola, me gustaría hacer una reserva en Cachorros Hotel Canino.');
+  const whatsappNumber = '+41798393541'; // número de WhatsApp
+  const whatsappMessage = encodeURIComponent('Hello, I would like to make a reservation at FRIENDS pets hotel.');
   const whatsappLink = `https://wa.me/${whatsappNumber}?text=${whatsappMessage}`;
 
   return (
-    <section id="inicio" className="bg-mint pt-20 pb-16">
+    <section id="startseite" className="bg-[#67d3b3] pt-20 pb-16">
       <div className="container mx-auto px-4 flex flex-col md:flex-row items-center">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
@@ -17,10 +17,10 @@ const HeroSection: React.FC = () => {
           className="md:w-1/2 mb-8 md:mb-0"
         >
           <h1 className="text-4xl md:text-5xl font-bold text-white mb-4">
-            El lugar perfecto para tu mejor amigo
+          Der perfekte Ort für deinen besten Freund
           </h1>
-          <p className="text-xl text-white mb-6">
-            En Cachorros, nos aseguramos de que tu mascota disfrute y se sienta como en casa mientras tú te relajas.
+          <p className="text-xl text-[#011811] mb-6">
+          Bei Friends sorgen wir dafür, dass sich dein Haustier wohlfühlt und wie zu Hause ist, während du dich entspannst.
           </p>
           <motion.a
             href={whatsappLink}
@@ -28,10 +28,10 @@ const HeroSection: React.FC = () => {
             rel="noopener noreferrer"
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.95 }}
-            className="inline-flex items-center bg-white text-mint font-bold py-3 px-6 rounded-full hover:bg-gray-100 transition-colors"
+            className="inline-flex items-center bg-[#039c6f] text-white font-bold py-3 px-6 rounded-full hover:bg-gray-100 hover:text-black transition-colors"
           >
             <MessageCircle className="mr-2" />
-            Reserva ahora
+            Jetzt reservieren
           </motion.a>
         </motion.div>
         <motion.div

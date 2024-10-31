@@ -27,9 +27,9 @@ const reasons = [
 
 const WhyChooseUs: React.FC = () => {
   return (
-    <section id="por-qué-elegirnos" className="py-16 bg-white">
+    <section id="vorteile" className="py-16 bg-white">
       <div className="container mx-auto px-4">
-        <h2 className="text-3xl font-bold text-center mb-12 text-gray-800">Por qué elegirnos</h2>
+        <h2 className="text-3xl font-bold text-center mb-12 text-gray-800">Warum uns wählen</h2>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
           {reasons.map((reason, index) => (
             <motion.div
